@@ -1,2 +1,5 @@
-﻿  GameMode.cpp
+﻿  BattleMap.cpp
+  GameMode.cpp
+  PlayableCharacter.cpp
+  Создание кода...
   GroupWorkAchitecture.vcxproj -> C:\Users\andre\source\repos\GroupWorkAchitecture\x64\Debug\GroupWorkAchitecture.exe

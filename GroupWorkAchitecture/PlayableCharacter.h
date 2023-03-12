@@ -21,7 +21,7 @@ public:
 		//TODO check if dead
 	}
 	void move(EMoveDirections direction, int movement) {
-		_position = _map->moveActor(direction, movement);
+		_position = _map->moveActor(_position, direction, movement);
 	}
 	Vector3 getPosition() {
 		return _position;
