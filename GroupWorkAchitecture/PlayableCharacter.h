@@ -7,12 +7,10 @@ class PlayableCharacter
 private:
 	std::shared_ptr<BattleMap> _map;
 	float _health;
-	bool _isPlayer;
 	Vector3 _position;
 
 public:
-	PlayableCharacter(bool isPlayer = true) {
-		_isPlayer = isPlayer;
+	PlayableCharacter() {
 	}
 	//Shares the pointer to the actual battleMap from gameMode?(may be transfered to BeginPlay)
 	void setMap(std::shared_ptr<BattleMap> battleMap) {
@@ -23,7 +21,7 @@ public:
 		//TODO check if dead
 	}
 	void move(EMoveDirections direction, int movement) {
-		_position = _map->moveActor(direction, movement, _isPlayer);
+		_position = _map->moveActor(direction, movement);
 	}
 	Vector3 getPosition() {
 		return _position;

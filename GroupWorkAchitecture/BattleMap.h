@@ -29,8 +29,9 @@ public:
 	}
 	//Returns the new position of the movable actor
 	//if isPlayer, the move change playerPosition, else move the enemyPosition
-	Vector3 moveActor(EMoveDirections direction, int movement, bool isPlayer = true) {
+	Vector3 moveActor(Vector3 startPosition, EMoveDirections direction, int movement) {
 		//TODO place logic here!
+		//and don't forget to check whether the coords belong to enemy or player
 	}
 };
 
