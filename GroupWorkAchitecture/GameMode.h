@@ -7,16 +7,15 @@
 
 #include <memory>
 #include <list>
-#include <map>
 
 static constexpr int maxCartsOnTable = 3;
 
 class GameMode
 {
 private:
-	std::map<std::unique_ptr<PlayerController>, 
+	std::pair<std::unique_ptr<PlayerController>, 
 		std::unique_ptr<CartridgePool> > _player;
-	std::map<std::unique_ptr<PlayerController>, 
+	std::pair<std::unique_ptr<PlayerController>, 
 		std::unique_ptr<CartridgePool> > _enemy; 
 	std::vector<Cartridge> _cartProtos;
 
